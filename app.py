@@ -13,8 +13,8 @@ def my_output(query) -> str:
    
 ### UI Development using streamlit
 
-st.set_page_config(page_title="Summer_C_BOT")
-st.header("Summer_C_BOT")
+st.set_page_config(page_title="PAWAN_CHAT_BOT")
+st.header("PAWAN_CHAT_BOT")
 input = st.text_input("Input",key = "input")
 submit =st.button("Ask your query")
 
