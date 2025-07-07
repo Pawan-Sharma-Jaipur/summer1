@@ -1,0 +1,58 @@
+step 1 --> create a folder ----> vs code open it ----> open the terminal----->
+write 'uv init helt'
+
+cd helt
+
+
+our Agenda----create a bot who works like  a gpt.
+project Architecture:
+
+venv ---> virtual environment
+
+requirements.txt  -----> we will have all the packages here.
+
+app.py ---> this is our main file where we will have all the logics.
+
+.env ---> In this we will store all hte secret credentials.
+
+
+
+open the terminal  and write 
+
+uv venv
+
+.venv\Scripts\activate  (if error then run = 'Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process')
+
+
+
+--Now create 'requirements.txt'
+
+streamlit -->for ui
+python-dotenv -->for load secret credentials in our other files
+google-generativeai -->  for gemini library
+
+
+--- Now open the terminal and write --
+
+uv add -r requirements.txt
+
+
+-- Now we will create a .env file
+
+(google--> makersuite api key --> google ai studio--> create api key)(https://aistudio.google.com/app/apikey)
+using this link we can create our api key.
+(api=application programming interface---> client to server midiator)
+
+
+--Now will create app.py in which we will write our logic.
+
+Function(query)-->model('gemini-2.0-flash')+API_key --> relevant response return text format
+
+streamlit UI--->
+
+Button click--> function run  ---> response return
+
+write this command on terminal
+streamlit run app.py
+
+upload all the data on github
